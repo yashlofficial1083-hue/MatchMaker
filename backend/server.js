@@ -26,6 +26,7 @@ connectDB()
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Matchmaker backend running on port ${PORT}`)
+      console.log("Mongo URI:", process.env.MONGODB_URI)
     })
   })
   .catch((error) => {

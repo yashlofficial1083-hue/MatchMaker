@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 
-const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/matchmaker'
+const connectDB = async () => {
+  if (!process.env.MONGODB_URI) {
+    throw new Error("MONGODB_URI is missing in Render environment variables")
+  }
 
-async function connectDB() {
-  await mongoose.connect(MONGODB_URI)
-  console.log(`MongoDB connected: ${MONGODB_URI}`)
+  await mongoose.connect(process.env.MONGODB_URI)
+  console.log("MongoDB connected")
 }
 
 module.exports = connectDB
