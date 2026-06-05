@@ -1,0 +1,24 @@
+[
+  {
+    "id": 101,
+    "firstName": "Priya",
+    "lastName": "Patil",
+    "gender": "Female",
+    "age": 25,
+    "city": "Mumbai",
+    "heightCm": 160,
+    "income": 700000,
+    "wantKids": "Yes"
+  },
+  {
+    "id": 102,
+    "firstName": "Riya",
+    "lastName": "Jain",
+    "gender": "Female",
+    "age": 24,
+    "city": "Pune",
+    "heightCm": 162,
+    "income": 800000,
+    "wantKids": "Yes"
+  }
+]
